@@ -1,5 +1,5 @@
-#day04
-
+#day04 运算符
+""""""
 #1. Python解释器
 """
 Linux/Unix的系统上，一般默认的 python 版本为 2.x，我们可以将 python3.x 安装在 /usr/local/python3 目录中。
@@ -81,19 +81,19 @@ a = 10
 b = 20
 list = [1, 2, 3, 4, 5]
 
-if (a in list):
+if a in list:
     print("1 - 变量 a 在给定的列表中 list 中")
 else:
     print("1 - 变量 a 不在给定的列表中 list 中")
 
-if (b not in list):
+if b not in list:
     print("2 - 变量 b 不在给定的列表中 list 中")
 else:
     print("2 - 变量 b 在给定的列表中 list 中")
 
 # 修改变量 a 的值
 a = 2
-if (a in list):
+if a in list:
     print("3 - 变量 a 在给定的列表中 list 中")
 else:
     print("3 - 变量 a 不在给定的列表中 list 中")
@@ -104,24 +104,24 @@ print("")
 # id() 函数用于获取对象内存地址。
 a = 20
 b = 20
-if (a is b):
+if a is b:
     print("1 - a 和 b 有相同的标识")
 else:
     print("1 - a 和 b 没有相同的标识")
 
-if ( id(a) == id(b) ):
+if id(a) == id(b):
     print("2 - a 和 b 有相同的标识")
 else:
     print("2 - a 和 b 没有相同的标识")
 
 # 修改变量 b 的值
 b = 30
-if (a is b):
+if a is b:
     print("3 - a 和 b 有相同的标识")
 else:
     print("3 - a 和 b 没有相同的标识")
 
-if (a is not b):
+if a is not b:
     print("4 - a 和 b 没有相同的标识")
 else:
     print("4 - a 和 b 有相同的标识")

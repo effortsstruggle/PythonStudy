@@ -1,5 +1,5 @@
-#day05 python 控制结构
-
+#day06 python 控制结构
+""""""
 
 #1. Python 条件控制
 """
@@ -67,7 +67,7 @@ Python for循环可以遍历任何序列的项目，如一个列表或者一个�
 """
 
 count = 0
-while count < 10 :
+while count < 10:
     print("count = %d" % count)
     count += 1
 
