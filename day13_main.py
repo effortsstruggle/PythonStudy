@@ -9,6 +9,13 @@ Python 推导式是一种独特的数据处理方式，可以从一个数据序�
         字典(dict)推导式                 { key_expr: value_expr for value in collection } 或 { key_expr: value_expr for value in collection if condition }
         集合(set)推导式                  { expression for item in Sequence } 或 { expression for item in Sequence if conditional }
         元组(tuple)推导式（生成器表达式）   (expression for item in Sequence ) 或 (expression for item in Sequence if conditional )
+        
+    推导式解析顺序：
+        1.迭代 
+        2.赋值给指定变量
+        3.条件过滤
+        4.表达式计算
+        5.结果收集
 """
 
 """
@@ -32,6 +39,13 @@ Python 推导式是一种独特的数据处理方式，可以从一个数据序�
 names = ['Bob', 'Tom', 'alice', 'Jerry', 'Wendy', 'Smith']
 new_names = [name.upper() for name in names if len(name) > 3]
 print(new_names)
+
+
+vec1 = [2, 4, 6]
+vec2 = [4, 3, -9]
+print([x*y for x in vec1 for y in vec2])
+print([x+y for x in vec1 for y in vec2])
+print([vec1[i]*vec2[i] for i in range(len(vec1))])
 
 """
 字典推导式

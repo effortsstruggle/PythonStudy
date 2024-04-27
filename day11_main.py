@@ -40,6 +40,8 @@
 tinydict = {'a': 1, 'b': 2, 'b': '3'}
 print(tinydict['b'])
 print(tinydict)
+for k, v in tinydict.items():
+    print(k, v)
 
 #访问字典里的值
 tinydict2 = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
