@@ -89,3 +89,8 @@ class DecoratorClass:
 @DecoratorClass
 def my_function():
     pass
+
+if __name__ == '__main__':
+    print("程序在自身运行.")
+else:
+    print("程序在另一个模块运行.")
